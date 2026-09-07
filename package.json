@@ -1,0 +1,48 @@
+{
+  "name": "terroir-mendoza",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "tsx scripts/seed.ts",
+    "format": "prettier --write .",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "latest",
+    "@radix-ui/react-slot": "latest",
+    "@tailwindcss/postcss": "^4",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "dotenv": "latest",
+    "drizzle-orm": "latest",
+    "framer-motion": "latest",
+    "jose": "latest",
+    "leaflet": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-leaflet": "latest",
+    "tailwind-merge": "latest",
+    "tailwindcss": "^4",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@types/leaflet": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "drizzle-kit": "latest",
+    "prettier": "^3.9.6",
+    "tsx": "latest",
+    "typescript": "^5"
+  }
+}
