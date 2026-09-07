@@ -73,18 +73,10 @@ export function Home() {
           </motion.div>
         </div>
         <div className="hero-bottom">
-          <span>
-            <MapPin size={14} />
-            {copy.home_9}
-            <i />
-            {copy.home_10}
-          </span>
-          <Link href="#filosofia">
-            {copy.home_11}
-            <ArrowDown size={16} />
+          <Link href="#filosofia" aria-label="Ver el contenido">
+            <ArrowDown size={22} />
           </Link>
         </div>
-        <div className="hero-side">{copy.home_12}</div>
       </section>
       <div className="promise-strip">
         <span>
@@ -250,9 +242,7 @@ export function Home() {
         <div
           className="personal-image"
           style={{ backgroundImage: `url(${photo(content.personalImage, 1200)})` }}
-        >
-          <span className="image-caption">{copy.home_41}</span>
-        </div>
+        />
         <motion.div {...reveal} className="personal-copy">
           <span className="eyebrow wine-text">{copy.home_42}</span>
           <h2>
